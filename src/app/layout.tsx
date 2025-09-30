@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "devstore",
+  title: {
+    template: '%s | devstore', //%s vira da page que exporta um metadata com title
+    default: 'devstore'
+  },
 };
 
 export default function RootLayout({
